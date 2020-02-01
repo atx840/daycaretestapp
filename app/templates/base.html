@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <script src="https://kit.fontawesome.com/602b411638.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav>
+    <h1>Dashboard Name - Administrator Mode</h1>
+    {% if current_user.is_anonymous %}
+    {% else %}
+    <a href="{{ url_for('auth.logout') }}">Logout</a>
+    {% endif %}
+</nav>
+<div class="container">
+{% with message = get_flashed_messages()[0] %}
+    {% if message %}
+    <div class="alert" role="alert">{{ message }}</div>
+    {% endif %}
+    {% endwith %}
+{% block content %}
+{% endblock %}
+</div>
+</body>
+</html>

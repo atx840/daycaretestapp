@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="login-container">
+    <h1>Login Portal</h1>
+    <form id="login" method="post">
+        {{ form.hidden_tag() }}
+        <div class="login-input-row">
+            {{ form.email.label }}
+            {{ form.email(size=32) }}
+            {% for error in form.email.errors %}
+            <span class="login-error-message">{{ error }}</span>
+            {% endfor %}
+            </div>
+            <div class="login-input-row">
+                {{ form.password.label }}
+                {{ form.password(size=32) }}
+                {% for error in form.password.errors %}
+                <span class="login-error-message">{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div class="login-input-row">
+                {{ form.submit() }}
+            </div>
+    </form>
+    <a href="{{ url_for('auth.register') }}">Register a new staff member</a>
+</div>
+{% endblock %}

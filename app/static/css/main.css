@@ -1,0 +1,164 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    background-color: #F8F8F8;
+}
+
+nav {
+    box-shadow: 0px 1px 10px #E5E7E9;
+    background: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+nav h1 {
+    margin: 0;
+}
+
+nav a {
+    margin-top: 6px;
+    margin-right: 20%;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard-block {
+    margin-right: 1rem;
+}
+
+.dashboard .dashboard-row .dashboard-block-bottom {
+    height: auto;
+    width: 400px;
+    background: white;
+    margin: 1rem 1rem 2rem 0;
+    text-align: start;
+    padding-left: 1rem;
+    box-shadow: -1px 1px 5px #E0E0E0;
+}
+.dashboard .dashboard-row .dashboard-block-bottom:hover {
+    box-shadow: -1px 1px 20px #E0E0E0;
+    transition: box-shadow 0.3s ease;
+}
+
+.dashboard .dashboard-row .dashboard-block-bottom h1 {
+    font-size: 1.2rem; 
+    color: #424242;
+}
+
+.dashboard .dashboard-row .dashboard-block-bottom .dashboard-block-bottom-number {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #2382ff;
+}
+
+.dashboard .dashboard-block table.dashboard-table {
+    width: 400px;
+    font-size: 1.2rem;
+    color: #1B2631;
+    background: white;
+    border-top: 5px solid #2382ff;
+    box-shadow: -1px 1px 5px #D7DBDD;
+    border-radius: 0 0 5px 5px;
+    padding: 20px;
+}
+
+.dashboard .dashboard-block table#birthday-table {
+    border-top: 5px solid #58D68D;
+ }
+
+.dashboard .dashboard-block table.dashboard-table tbody {
+    
+}
+
+.dashboard .dashboard-block table.dashboard-table tr th {
+    text-align: start;
+}
+
+.dashboard .dashboard-block table.dashboard-table tr th.dashboard-table-number {
+    text-align: end;
+}
+
+.dashboard .dashboard-block table.dashboard-table tr th.dashboard-table-number-header {
+    text-align: end;
+}
+
+.dashboard .dashboard-block table.dashboard-table thead h1 {
+    font-weight: 100;
+}
+
+.dashboard .dashboard-block .total-outstanding-payments {
+    height: 200px;
+    width: 300px;
+    background: white;
+}
+
+.container {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.container .menus {
+    display: flex;
+    flex-direction: row;
+}
+
+.container .menus .menu-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    width: 300px;
+}
+
+.container .menus .menu-item h1 {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.container .menus .menu-item a {
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.container .menus .menu-item a:nth-child(odd) {
+    background: #ECF0F1;
+}
+
+.container .menus .menu-item a:hover {
+    color: blue;
+}
+
+@media(max-width: 600px) {
+    .container .menus {
+        flex-direction: column;
+    }
+    .container .menus h1 {
+        margin-top: 1rem;
+    }
+}
+
+
+.alert {
+    width: 300px;
+    padding: 10px;
+    background: #F1948A;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+}

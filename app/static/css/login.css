@@ -1,0 +1,42 @@
+/*CTRL+SHFT+R to reset Chrome*/
+
+.login-container {
+    width: 400px;
+    margin: 5vh auto;
+}
+
+.login-container h1 {
+    text-align: center;
+}
+
+.login-container a {
+    font-size: 1.2rem;
+}
+
+.login-container form#login {
+}
+
+.login-container form#login .login-input-row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.login-container form#login .login-input-row input {
+    height: 30px;
+    font-size: 1.5rem;
+    padding: 5px;
+    outline: none;
+}
+
+.login-container form#login .login-input-row input[type="submit"] {
+    padding: 10px;
+    text-align: center;
+    height: auto;
+    cursor: pointer;
+    background: #2382ff;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: inherit;
+}

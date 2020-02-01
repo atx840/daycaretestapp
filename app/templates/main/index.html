@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="dashboard">
+    <div class="dashboard-row">
+        <div class="dashboard-block">
+            <table class="dashboard-table">
+                <tbody>
+                    <tr>
+                        <th>Centre</th>
+                        <th style="color: #2382ff" class="dashboard-table-number-header">Average Attendance <i class="fas fa-users"></i></th>
+                    </tr>
+                    <tr>
+                        <th>Location 1</th>
+                        <th class="dashboard-table-number">100.34</th>
+                    </tr>
+                    <tr>
+                        <th>Location 2</th>
+                        <th class="dashboard-table-number">105.45</th>
+                    </tr>
+                    <tr>
+                        <th>Location 3</th>
+                        <th class="dashboard-table-number">105.45</th>
+                    </tr>
+                    <tr>
+                        <th>Location 4</th>
+                        <th class="dashboard-table-number">105.45</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="dashboard-block">
+            <table id="birthday-table" class="dashboard-table">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th style="color: #58D68D" class="dashboard-table-number-header">Birthday <i style="margin-bottom: 5px;" class="fas fa-birthday-cake"></i></th>
+                    </tr>
+                    <tr>
+                        <th>Staff Member 1</th>
+                        <th class="dashboard-table-number">January 1st, 2020</th>
+                    </tr>
+                    <tr>
+                        <th>Staff Member 2</th>
+                        <th class="dashboard-table-number">January 1st, 2020</th>
+                    </tr>
+                    <tr>
+                        <th>Staff Member 3</th>
+                        <th class="dashboard-table-number">January 1st, 2020</th>
+                    </tr>
+                    <tr>
+                        <th>Staff Member 4</th>
+                        <th class="dashboard-table-number">January 1st, 2020</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <div class="dashboard-row">
+            <div class="dashboard-block-bottom">
+                <div class="total-outstanding-payments">
+                    <h1>Total Outstanding Payments</h1>
+                    <p class="dashboard-block-bottom-number">100</p>
+                    <p>View Outstanding Payments</p>
+                </div>
+            </div>
+        
+            <div class="dashboard-block-bottom">
+                <div class="total-outstanding-payments">
+                    <h1>Subsidy Status</h1>
+                    <p class="dashboard-block-bottom-number">25</p>
+                    <p>View More</p>
+                </div>
+            </div>
+            <div class="dashboard-block-bottom">
+                <div class="total-outstanding-payments">
+                    <h1>Staff Certs Expiring in 3 Months</h1>
+                    <p class="dashboard-block-bottom-number">21</p>
+                    <p>View More</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="menus">
+    <div class="menu-item">
+    <h1>Family Options</h1>
+            <a href="">Add new family</a>
+            <a href="">Active family List</a>
+            <a href="">Inactive family List</a>
+            <a href="">Email parents</a>
+            <a href="">List of active children</a>
+            <a href="">List of pending registrations</a>
+    </div>
+    <div class="menu-item">
+        <h1>Staff Options</h1>
+            <a href="">Add new staff member</a>
+            <a href="">Full Staff List</a>
+            <a href="">Active Staff List</a>
+            <a href="">Email staff</a>
+            <a href="">Time off requests</a>
+            <a href="">List of active children</a>
+    </div>
+</div>
+{% endblock %}
